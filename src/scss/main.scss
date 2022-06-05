@@ -4,12 +4,13 @@
   margin: 0;
 }
 .done {
-  color: lightgreen;
+  
   text-decoration: line-through;
   border-bottom: 1px solid black;
 }
 .done button {
   text-decoration: line-through;
+  
 }
 
 
@@ -18,7 +19,7 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: "Lato", sans-serif;
-  /* color: #0860dc; */
+  font-size: 1.3rem;
 }
 .main-layout {
   width: 100%;
@@ -26,19 +27,23 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  
+  .yet-to-do,  .finished{
+    padding-top: 1rem;
+    
+  }
+  
   h3 {
     color: #0860dc;
+    
   }
 
   h1 {
-    padding-bottom: 2rem;
-    font-size: 6rem;
+    padding: 1rem;
+    font-size: 4.5rem;
     color: #0860dc;
   }
-  input {
-    /* border: none; */
-  }
+ 
   form input[type="text"] {
     line-height: 2rem;
     border: none;
