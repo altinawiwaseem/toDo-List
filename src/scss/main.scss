@@ -1,13 +1,97 @@
-.done{
-    color: lightgreen;
-    text-decoration: line-through;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-.done button{
-    text-decoration: line-through;
+.done {
+  color: lightgreen;
+  text-decoration: line-through;
+  border-bottom: 1px solid black;
+}
+.done button {
+  text-decoration: line-through;
+}
 
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+  /* color: #0860dc; */
 }
-button {
-    border: 0 none;
+.main-layout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3 {
+    color: #0860dc;
+  }
+
+  h1 {
+    padding-bottom: 2rem;
+    font-size: 6rem;
+    color: #0860dc;
+  }
+  input {
+    /* border: none; */
+  }
+  form input[type="text"] {
+    line-height: 2rem;
+    border: none;
+    width: 13rem;
+    border-bottom: 1px #0860dc solid;
+    margin: 2rem;
+    &::placeholder {
+      text-align: center;
+      color: #0860dc;
+    }
+  }
+
+  form input[type="submit"] {
+    font-size: 1.3rem;
+    width: 7rem;
+    line-height: 2rem;
+    border-color: #0860dc;
+    color: #0860dc;
+    text-align: center;
+    cursor: pointer;
     background-color: transparent;
+    transition: 0.7s ease-in-out;
+    outline: none;
+    &:active {
+      transform: scale(0.97);
+      background-color: #0860dc;
+      color: white;
+    }
+    &:hover {
+      background-color: #0860dc;
+      color: white;
+      border-color: white;
+    }
+  }
+  ul li{
+    
+      border-bottom: 1px solid black;
+      width: 25rem;
+      display: flex;
+      justify-content: space-between;
+      padding: 1.5rem 0 .1rem  .5rem;
+      span{
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+
+      }
+      
     
   }
+}
+
+button {
+  border: 0 none;
+  background-color: transparent;
+}
