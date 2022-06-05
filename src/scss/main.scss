@@ -79,7 +79,7 @@ body {
     }
   }
   ul li{
-    
+    position: relative;
       border-bottom: 1px solid black;
       width: 25rem;
       display: flex;
@@ -91,6 +91,22 @@ body {
         justify-content: space-between;
 
       }
+     
+        &::after {
+          content: "";
+          border: 1px solid black;
+          border-bottom: none;
+          border-top: none;
+          left: -25%;
+          width: 150%;
+          height: 100%;
+          position: absolute;
+          z-index: -1;
+          /* @media only screen and (max-width:500px){
+            border:none;
+            
+          } */
+        }
       
     
   }
